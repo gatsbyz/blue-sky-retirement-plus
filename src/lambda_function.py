@@ -179,8 +179,8 @@ def recommend_portfolio(intent_request):
     # Get the initial investment recommendation
     
     age_of_death = int(80)
-    retirement_years = int(age_of_death - retirement_age)
-    years_to_retirement = int(retirement_age - age)
+    retirement_years = int(age_of_death - parse_int(retirement_age))
+    years_to_retirement = int(parse_int(retirement_age) - parse_int(age))
     
     # input = retirement_years, years_to_retirement, savings, portfolio_type, total_stocks_bonds
 
