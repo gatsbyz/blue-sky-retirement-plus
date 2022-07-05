@@ -72,7 +72,7 @@ https://docs.google.com/document/d/1laAHUYkqxnocPBQqIeRB0HaU6wA8JShfNR4nlD4YaIU/
 
 ###Team Presentation (Slides)
 <br>
-https://docs.google.com/presentation/d/1lwsZ5ntYcasI9LIwBdJl4LitR0IjZjs6vO7VatrjSHk/edit?usp=sharing
+https://docs.google.com/presentation/d/1telx0y47zEFE7gah3XCnOr20Z_wnIJqP7ymZ5ulgjtM/edit?usp=sharing
 
 ---
 
