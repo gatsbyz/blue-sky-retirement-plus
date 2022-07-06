@@ -1,0 +1,395 @@
+MSA,rank
+"Pine Bluff, AR",0
+"Danville, IL",0
+"Chico, CA",0
+"Beckley, WV",0
+"Goldsboro, NC",0
+"Charleston, WV",0
+"Farmington, NM",0
+"Cumberland, MD-WV",0
+"St. Joseph, MO-KS",0
+"Carbondale-Marion, IL",0
+"Kankakee, IL",0
+"Decatur, IL",0
+"Wheeling, WV-OH",0
+"Elmira, NY",0
+"Weirton-Steubenville, WV-OH",0
+"Fairbanks, AK",0
+"Sumter, SC",0
+"Parkersburg-Vienna, WV",0
+"Shreveport-Bossier City, LA",0
+"Peoria, IL",0
+"Florence, SC",0
+"Muncie, IN",0
+"Napa, CA",0
+"Erie, PA",0
+"Casper, WY",0
+"Santa Rosa-Petaluma, CA",0
+"Huntington-Ashland, WV-KY-OH",0
+"Johnstown, PA",0
+"Houma-Thibodaux, LA",0
+"Rocky Mount, NC",0
+"New Bern, NC",0
+"Bloomsburg-Berwick, PA",0
+"Lima, OH",0
+"Altoona, PA",0
+"Manhattan, KS",0
+"Bloomington, IN",0
+"Bay City, MI",0
+"Santa Cruz-Watsonville, CA",0
+"Lafayette, LA",0
+"Alexandria, LA",0
+"Springfield, IL",0
+"Greenville, NC",0
+"Enid, OK",0
+"Youngstown-Warren-Boardman, OH-PA",0
+"Saginaw, MI",0
+"Lawton, OK",0
+"State College, PA",0
+"Jackson, MS",0
+"Waterloo-Cedar Falls, IA",0
+"Anaheim-Santa Ana-Irvine, CA",0
+"Los Angeles-Long Beach-Glendale, CA",0
+"Albany, GA",0
+"Williamsport, PA",0
+"Flint, MI",0
+"Victoria, TX",0
+"Brunswick, GA",0
+"Texarkana, TX-AR",0
+"Champaign-Urbana, IL",0
+"Fort Smith, AR-OK",0
+"Terre Haute, IN",0
+"Rockford, IL",0
+"Bloomington, IL",0
+"Utica-Rome, NY",0
+"Niles, MI",0
+"Corpus Christi, TX",0
+"San Jose-Sunnyvale-Santa Clara, CA",0
+"Panama City, FL",0
+"Springfield, MA",0
+"Mobile, AL",0
+"Oxnard-Thousand Oaks-Ventura, CA",0
+"Wichita Falls, TX",0
+"Vineland-Bridgeton, NJ",0
+"Laredo, TX",0
+"Milwaukee-Waukesha, WI",0
+"Akron, OH",0
+"San Francisco-San Mateo-Redwood City, CA",0
+"Oakland-Berkeley-Livermore, CA",0
+"Canton-Massillon, OH",0
+"Davenport-Moline-Rock Island, IA-IL",0
+"Chicago-Naperville-Evanston, IL",0
+"Elgin, IL",0
+"Battle Creek, MI",0
+"Topeka, KS",0
+"Evansville, IN-KY",0
+"Monroe, LA",0
+"Sierra Vista-Douglas, AZ",0
+"Norwich-New London, CT",0
+"Toledo, OH",0
+"Blacksburg-Christiansburg, VA",0
+"Midland, MI",0
+"Dalton, GA",0
+"Lansing-East Lansing, MI",0
+"Jefferson City, MO",0
+"Springfield, OH",0
+"Glens Falls, NY",0
+"Hartford-East Hartford-Middletown, CT",0
+"Binghamton, NY",0
+"Anchorage, AK",0
+"St. Louis, MO-IL",0
+"Memphis, TN-MS-AR",0
+"Syracuse, NY",0
+"New Orleans-Metairie, LA",0
+"Watertown-Fort Drum, NY",0
+"Beaumont-Port Arthur, TX",0
+"Gadsden, AL",0
+"San Diego-Chula Vista-Carlsbad, CA",0
+"Kahului-Wailuku-Lahaina, HI",0
+"Pittsburgh, PA",0
+"Duluth, MN-WI",0
+"Cape Girardeau, MO-IL",0
+"New Haven-Milford, CT",0
+"Roanoke, VA",0
+"Anniston-Oxford, AL",0
+"Jackson, MI",0
+"El Centro, CA",0
+"Bangor, ME",0
+"Kalamazoo-Portage, MI",0
+"Cleveland-Elyria, OH",0
+"Lafayette-West Lafayette, IN",0
+"Pittsfield, MA",0
+"Rochester, NY",0
+"Kingsport-Bristol, TN-VA",0
+"Brownsville-Harlingen, TX",0
+"Hickory-Lenoir-Morganton, NC",0
+"Odessa, TX",0
+"Santa Maria-Santa Barbara, CA",0
+"Yuma, AZ",0
+"Urban Honolulu, HI",0
+"Lynchburg, VA",0
+"Lawrence, KS",0
+"San Luis Obispo-Paso Robles, CA",0
+"Racine, WI",0
+"Grand Island, NE",0
+"Jackson, TN",0
+"South Bend-Mishawaka, IN-MI",0
+"Columbus, IN",0
+"Warren-Troy-Farmington Hills, MI",0
+"Detroit-Dearborn-Livonia, MI",0
+"Albuquerque, NM",0
+"Oshkosh-Neenah, WI",0
+"Michigan City-La Porte, IN",0
+"Longview, TX",0
+"Columbus, GA-AL",0
+"Bridgeport-Stamford-Norwalk, CT",0
+"Salinas, CA",0
+"Morgantown, WV",0
+"San Angelo, TX",0
+"Grand Forks, ND-MN",0
+"Kokomo, IN",0
+"Ocean City, NJ",0
+"Dayton-Kettering, OH",0
+"East Stroudsburg, PA",0
+"Baltimore-Columbia-Towson, MD",0
+"Ann Arbor, MI",0
+"Macon-Bibb County, GA",0
+"Scranton--Wilkes-Barre, PA",0
+"Wausau-Weston, WI",0
+"Kingston, NY",0
+"Atlantic City-Hammonton, NJ",0
+"Elkhart-Goshen, IN",0
+"Dubuque, IA",0
+"Wichita, KS",0
+"Fort Lauderdale-Pompano Beach-Sunrise, FL",0
+"Miami-Miami Beach-Kendall, FL",0
+"La Crosse-Onalaska, WI-MN",0
+"Janesville-Beloit, WI",0
+"Chambersburg-Waynesboro, PA",0
+"Ithaca, NY",0
+"Redding, CA",0
+"Tallahassee, FL",0
+"Sheboygan, WI",0
+"Hanford-Corcoran, CA",0
+"Gettysburg, PA",0
+"Albany-Schenectady-Troy, NY",0
+"Fond du Lac, WI",0
+"Muskegon, MI",0
+"New York-Jersey City-White Plains, NY-NJ",0
+"Newark, NJ-PA",0
+"Baton Rouge, LA",0
+"Dothan, AL",0
+"Fayetteville, NC",0
+"Ames, IA",0
+"Boston, MA",0
+"Cambridge-Newton-Framingham, MA",0
+"St. Cloud, MN",0
+"Hot Springs, AR",0
+"Buffalo-Cheektowaga, NY",0
+"Virginia Beach-Norfolk-Newport News, VA-NC",0
+"Rome, GA",0
+"Little Rock-North Little Rock-Conway, AR",0
+"Lake Charles, LA",0
+"Gulfport-Biloxi, MS",0
+"Wilmington, DE-MD-NJ",0
+"Camden, NJ",0
+"Philadelphia, PA",0
+"Decatur, AL",0
+"Mansfield, OH",0
+"Louisville/Jefferson County, KY-IN",0
+"Amarillo, TX",0
+"Hattiesburg, MS",0
+"California-Lexington Park, MD",0
+"Owensboro, KY",0
+"Florence-Muscle Shoals, AL",0
+"Birmingham-Hoover, AL",0
+"Lexington-Fayette, KY",0
+"Great Falls, MT",0
+"Midland, TX",0
+"Joplin, MO",0
+"Sebring-Avon Park, FL",0
+"Lancaster, PA",0
+"Morristown, TN",0
+"Yakima, WA",0
+"Montgomery, AL",0
+"Reading, PA",0
+"Cedar Rapids, IA",0
+"Las Cruces, NM",0
+"Harrisonburg, VA",0
+"Cincinnati, OH-KY-IN",0
+"Columbia, SC",0
+"Boulder, CO",0
+"Greensboro-High Point, NC",0
+"Lewiston-Auburn, ME",0
+"Manchester-Nashua, NH",0
+"Modesto, CA",0
+"Chattanooga, TN-GA",0
+"Madera, CA",1
+"Winston-Salem, NC",0
+"York-Hanover, PA",0
+"Johnson City, TN",0
+"Sioux City, IA-NE-SD",0
+"Providence-Warwick, RI-MA",0
+"Monroe, MI",0
+"Cheyenne, WY",0
+"Pueblo, CO",0
+"Valdosta, GA",0
+"Allentown-Bethlehem-Easton, PA-NJ",0
+"Vallejo, CA",0
+"Tucson, AZ",0
+"El Paso, TX",0
+"Riverside-San Bernardino-Ontario, CA",0
+"Washington-Arlington-Alexandria, DC-VA-MD-WV",0
+"Visalia, CA",0
+"Burlington-South Burlington, VT",0
+"Lebanon, PA",0
+"Flagstaff, AZ",0
+"Green Bay, WI",0
+"Tulsa, OK",0
+"Lewiston, ID-WA",0
+"Mankato, MN",0
+"Augusta-Richmond County, GA-SC",0
+"Grand Rapids-Kentwood, MI",0
+"Abilene, TX",0
+"Grants Pass, OR",0
+"Fresno, CA",0
+"Hinesville, GA",0
+"Walla Walla, WA",0
+"Appleton, WI",0
+"Eau Claire, WI",0
+"Worcester, MA-CT",0
+"Pocatello, ID",0
+"Bakersfield, CA",0
+"Poughkeepsie-Newburgh-Middletown, NY",0
+"Missoula, MT",0
+"Staunton, VA",0
+"Santa Fe, NM",0
+"McAllen-Edinburg-Mission, TX",0
+"Lubbock, TX",0
+"Trenton-Princeton, NJ",0
+"Jonesboro, AR",0
+"Hammond, LA",0
+"Charlottesville, VA",0
+"Rapid City, SD",0
+"Minneapolis-St. Paul-Bloomington, MN-WI",0
+"Columbia, MO",0
+"Kansas City, MO-KS",0
+"Portland-Vancouver-Hillsboro, OR-WA",0
+"Wilmington, NC",0
+"Fort Wayne, IN",0
+"Harrisburg-Carlisle, PA",0
+"Springfield, MO",0
+"Denver-Aurora-Lakewood, CO",0
+"Bremerton-Silverdale-Port Orchard, WA",0
+"Medford, OR",0
+"Elizabethtown-Fort Knox, KY",0
+"Eugene-Springfield, OR",0
+"Lincoln, NE",0
+"Portland-South Portland, ME",0
+"Billings, MT",0
+"Iowa City, IA",0
+"Columbus, OH",0
+"Cleveland, TN",0
+"Rochester, MN",0
+"Richmond, VA",0
+"Oklahoma City, OK",0
+"Asheville, NC",0
+"Grand Junction, CO",0
+"Dover, DE",0
+"Lake Havasu City-Kingman, AZ",1
+"Omaha-Council Bluffs, NE-IA",0
+"Sacramento-Roseville-Folsom, CA",0
+"Knoxville, TN",0
+"Tyler, TX",0
+"Wenatchee, WA",0
+"Madison, WI",0
+"Waco, TX",0
+"Jacksonville, NC",0
+"Salem, OR",0
+"Indianapolis-Carmel-Anderson, IN",0
+"Hagerstown-Martinsburg, MD-WV",0
+"Hilton Head Island-Bluffton, SC",0
+"Seattle-Bellevue-Kent, WA",0
+"Bismarck, ND",0
+"Athens-Clarke County, GA",0
+"Mount Vernon-Anacortes, WA",0
+"Merced, CA",0
+"Durham-Chapel Hill, NC",0
+"Bowling Green, KY",0
+"Yuba City, CA",0
+"Greenville-Anderson, SC",0
+"Tuscaloosa, AL",0
+"Gainesville, GA",0
+"Tampa-St. Petersburg-Clearwater, FL",0
+"Albany-Lebanon, OR",0
+"Houston-The Woodlands-Sugar Land, TX",0
+"Atlanta-Sandy Springs-Alpharetta, GA",0
+"Bellingham, WA",0
+"Phoenix-Mesa-Chandler, AZ",0
+"Winchester, VA-WV",0
+"Gainesville, FL",0
+"Fargo, ND-MN",0
+"Longview, WA",0
+"Salt Lake City, UT",0
+"Naples-Marco Island, FL",0
+"Savannah, GA",0
+"College Station-Bryan, TX",0
+"Pensacola-Ferry Pass-Brent, FL",0
+"Corvallis, OR",0
+"Fort Collins, CO",0
+"Barnstable Town, MA",0
+"Palm Bay-Melbourne-Titusville, FL",1
+"Des Moines-West Des Moines, IA",0
+"Salisbury, MD-DE",0
+"Charleston-North Charleston, SC",0
+"Carson City, NV",0
+"Stockton, CA",0
+"Las Vegas-Henderson-Paradise, NV",0
+"San Antonio-New Braunfels, TX",0
+"Colorado Springs, CO",0
+"Prescott Valley-Prescott, AZ",0
+"Dallas-Plano-Irving, TX",0
+"Fort Worth-Arlington-Grapevine, TX",0
+"Deltona-Daytona Beach-Ormond Beach, FL",0
+"Charlotte-Concord-Gastonia, NC-SC",0
+"Ogden-Clearfield, UT",0
+"Kennewick-Richland, WA",0
+"Burlington, NC",0
+"Warner Robins, GA",0
+"Sherman-Denison, TX",0
+"Sebastian-Vero Beach, FL",0
+"Twin Falls, ID",0
+"Olympia-Lacey-Tumwater, WA",0
+"Port St. Lucie, FL",0
+"Reno, NV",0
+"Nashville-Davidson--Murfreesboro--Franklin, TN",0
+"Spokane-Spokane Valley, WA",0
+"North Port-Sarasota-Bradenton, FL",0
+"Clarksville, TN-KY",0
+"Killeen-Temple, TX",0
+"Crestview-Fort Walton Beach-Destin, FL",0
+"Cape Coral-Fort Myers, FL",0
+"Homosassa Springs, FL",0
+"Orlando-Kissimmee-Sanford, FL",0
+"Ocala, FL",0
+"Sioux Falls, SD",0
+"Auburn-Opelika, AL",0
+"Punta Gorda, FL",0
+"Huntsville, AL",0
+"Spartanburg, SC",0
+"Jacksonville, FL",0
+"Raleigh-Cary, NC",0
+"Fayetteville-Springdale-Rogers, AR",0
+"Logan, UT-ID",0
+"The Villages, FL",1
+"Lakeland-Winter Haven, FL",1
+"Idaho Falls, ID",1
+"Austin-Round Rock-Georgetown, TX",0
+"Bend, OR",0
+"Boise City, ID",1
+"Daphne-Fairhope-Foley, AL",0
+"Myrtle Beach-Conway-North Myrtle Beach, SC-NC",0
+"Greeley, CO",0
+"Provo-Orem, UT",0
+"Coeur d'Alene, ID",0
+"St. George, UT",1
