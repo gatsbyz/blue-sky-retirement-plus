@@ -3,6 +3,9 @@ from datetime import datetime
 from dateutil.relativedelta import relativedelta
 from botocore.vendored import requests
 
+import get_cost_of_living_data
+import simulation
+
 ### Functionality Helper Functions ###
 def parse_int(n):
     """
@@ -54,7 +57,7 @@ def validate_data(age, investment_amount, intent_request):
     """
     # Validate that the user is over 0 years old
     if age is not None:
-        age = parse_int(age)
+        age = parse_int(age['value']['interpretedValue'])
         
         if age<=0 or age>65:
             return build_validation_result(
@@ -66,14 +69,14 @@ def validate_data(age, investment_amount, intent_request):
     
     # Validate the investment amount, it should be > 0
     if investment_amount is not None:
-        investment_amount = parse_int(investment_amount)
+        investment_amount = parse_int(investment_amount['value']['interpretedValue'])
             
     # Since parameters are strings it's important to cast values    
     
         if investment_amount<5000:
             return build_validation_result(
                 False,
-                "totalStocksBonds",
+                "totalStockBonds",
                 "You should invest more than $5000 to use this service,"
                 "Please provide another amount"
                 )
@@ -86,7 +89,7 @@ def get_slots(intent_request):
     """
     Fetch all the slots and their values from the current intent.
     """
-    return intent_request["currentIntent"]["slots"]
+    return intent_request["sessionState"]["intent"]["slots"]
 
 
 def elicit_slot(session_attributes, intent_name, slots, slot_to_elicit, message):
@@ -95,40 +98,68 @@ def elicit_slot(session_attributes, intent_name, slots, slot_to_elicit, message)
     """
 
     return {
-        "sessionAttributes": session_attributes,
-        "dialogAction": {
-            "type": "ElicitSlot",
-            "intentName": intent_name,
-            "slots": slots,
-            "slotToElicit": slot_to_elicit,
-            "message": message,
+        "sessionState": {
+            "sessionAttributes": session_attributes,
+            "dialogAction": {
+                "slotToElicit": slot_to_elicit,
+                "type": "ElicitSlot",
+            },
+            "intent": {
+                "name": intent_name,
+                "slots": slots,
+            },
+            "messages": [{
+                "contentType": "PlainText",
+                "content": message,
+            }]
         },
     }
 
 
-def delegate(session_attributes, slots):
+def delegate(slots, intent_name):
     """
     Defines a delegate slot type response.
     """
 
     return {
-        "sessionAttributes": session_attributes,
-        "dialogAction": {"type": "Delegate", "slots": slots},
+        "sessionState": {
+            # "sessionAttributes": session_attributes,
+            "dialogAction": {
+                "type": "Delegate"
+            },
+            "intent": { 
+                "name": intent_name,
+                "slots": slots
+            }
+        }
     }
 
 
-def close(session_attributes, fulfillment_state, message):
+def close(intent_name, message):
     """
     Defines a close slot type response.
     """
-
+    print(' '.join(map(str, message)))
     response = {
-        "sessionAttributes": session_attributes,
-        "dialogAction": {
-            "type": "Close",
-            "fulfillmentState": fulfillment_state,
-            "message": message,
+        "sessionState": {
+        
+            "dialogAction": {
+                "type": "Close"
+            },
+            "intent": {
+                "name": intent_name,
+                "state": 'Fulfilled'
+            }
         },
+        "messages": [{
+            "contentType": "ImageResponseCard",
+            # "content": '\n'.join(map(str, message)),
+            "imageResponseCard": {
+                "subtitle": '\n'.join(map(str, message)),
+                "title": "Do not save what is left after spending, but spend what is left after saving.",
+                "imageUrl": "https://images-grogu.s3.amazonaws.com/grogu.png",
+            }
+        }]
     }
 
     return response
@@ -144,8 +175,9 @@ def recommend_portfolio(intent_request):
     retirement_age = get_slots(intent_request)["retirementAge"]
     savings = get_slots(intent_request)["savings"]
     portfolio_type = get_slots(intent_request)["portfolioType"]
-    total_stocks_bonds = get_slots(intent_request)["totalStocksBonds"]
+    total_stocks_bonds = get_slots(intent_request)["totalStockBonds"]
     source = intent_request["invocationSource"]
+
 
     if source == "DialogCodeHook":
         # Perform basic validation on the supplied input slots.
@@ -159,45 +191,46 @@ def recommend_portfolio(intent_request):
         
         # If the data provided by the user is not valid,
         # the elicitSlot dialog action is used to re-prompt for the first violation detected.
+        
         if not validation_result["isValid"]:
             slots[validation_result["violatedSlot"]] = None  # Cleans invalid slot
 
             # Returns an elicitSlot dialog to request new data for the invalid slot
             return elicit_slot(
-                intent_request["sessionAttributes"],
-                intent_request["currentIntent"]["name"],
+                intent_request['sessionState']["sessionAttributes"],
+                intent_request['sessionState']['intent']['name'],
                 slots,
                 validation_result["violatedSlot"],
                 validation_result["message"],
             )
-
         # Fetch current session attributes
-        output_session_attributes = intent_request["sessionAttributes"]
+        # output_session_attributes = intent_request['sessionState']
 
-        return delegate(output_session_attributes, get_slots(intent_request))
+        return delegate(get_slots(intent_request), intent_request['sessionState']['intent']['name'])
 
     # Get the initial investment recommendation
     
     age_of_death = int(80)
-    retirement_years = int(age_of_death - parse_int(retirement_age))
-    years_to_retirement = int(parse_int(retirement_age) - parse_int(age))
+    retirement_years = int(age_of_death - parse_int(retirement_age['value']['interpretedValue']))
+    years_to_retirement = int(parse_int(retirement_age['value']['interpretedValue']) - parse_int(age['value']['interpretedValue']))
     
     # input = retirement_years, years_to_retirement, savings, portfolio_type, total_stocks_bonds
+    
+    data, cities = get_cost_of_living_data.cost_of_living_data()
+    savings_df = simulation.create_savings_dataframe(parse_int(savings['value']['interpretedValue']), parse_int(total_stocks_bonds['value']['interpretedValue']))
+    df_portfolio = simulation.get_portfolio_dataframe()
+    output = simulation.run_mc_output(df_portfolio, portfolio_type, years_to_retirement)
+    mean_cumulative_return = simulation.mean_cumulative_return(output, parse_int(total_stocks_bonds['value']['interpretedValue']))
+    savings_at_retirement = simulation.savings_at_retirement(mean_cumulative_return, parse_int(savings['value']['interpretedValue']))
+    retirement_cities = simulation.get_retirement_cities(output, data, retirement_years, parse_int(total_stocks_bonds['value']['interpretedValue']), parse_int(savings['value']['interpretedValue']))
 
-    initial_recommendation = 'test rec'
-   
 
+    initial_recommendation = retirement_cities
+    intent_name = intent_request['sessionState']['intent']['name']
     # Return a message with the initial recommendation based on the risk level.
     return close(
-        intent_request["sessionAttributes"],
-        "Fulfilled",
-        {
-            "contentType": "PlainText",
-            "content": """{}, based on the information you provided, please choose an investment portfolio with {}
-            """.format(
-                first_name, initial_recommendation
-            ),
-        },
+        intent_name,
+        initial_recommendation,
     )
 
 
@@ -207,7 +240,7 @@ def dispatch(intent_request):
     Called when the user specifies an intent for this bot.
     """
 
-    intent_name = intent_request["currentIntent"]["name"]
+    intent_name = intent_request['sessionState']['intent']['name']
 
     # Dispatch to bot's intent handlers
     if intent_name == "recommendPortfolio":
