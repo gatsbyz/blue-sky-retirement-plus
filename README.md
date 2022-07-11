@@ -9,11 +9,8 @@ Retirement Global 2.0 is our new and improved application designed to help worki
 2. Enter the utterance: "I want to retire"
 3. Follow and answer prompts from Amazon Lex chatbot
 4. The CUI will show you the cities you can retire in.
-5. Your retirement cities will be saved in `cache/retirement-cities.csv`
-6. run `jupyter/retirement_tool.ipynb` to visualize your retirement data. the most recent user input will be used.
-7. run `jupyter/map_retirement_cities.ipynb` to visualize your retirement cities. the most recent retirement cities will be used.
-8. map results saved in `Interactive_retirement_map.html`
-9. Retire!
+5. Map results saved in `Interactive_retirement_map.html`
+6. Retire!
 
 ## Sample Prompts (Amazon Lex)
 ? What is your current age 25
