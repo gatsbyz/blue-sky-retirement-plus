@@ -1,18 +1,17 @@
-# Retirement Global +
+# Retirement Global 2.0
 
 ## How To Run
-0. *open terminal at the root of project1*
-1. Run `python3 src/main.py` in terminal to start calculator.
-2. Enter your retirement information.
-3. Your input will be saved in `cache/user_data.csv`
-4. The CLI will show you the cities you can retire in.
+1. Open `RoboAdviser-LexJson.zip file` to start Amazon Lex chatbot
+2. Enter the utterance: "I want to retire"
+3. Follow and answer prompts from Amazon Lex chatbot
+4. The CUI will show you the cities you can retire in.
 5. Your retirement cities will be saved in `cache/retirement-cities.csv`
 6. run `jupyter/retirement_tool.ipynb` to visualize your retirement data. the most recent user input will be used.
 7. run `jupyter/map_retirement_cities.ipynb` to visualize your retirement cities. the most recent retirement cities will be used.
 8. map results saved in `Interactive_retirement_map.html`
-9. retire
+9. Retire!
 
-## Sample Input
+## Sample Prompts (Amazon Lex)
 ? What is your current age 25
 
 ? By what age, would you prefer to retire? 65
@@ -21,17 +20,16 @@
 
 ? Would you like your portfolio to be conservative[1], conservatively moderate[2], or moderate[3]? 3
 
-
 ? How much would you like to invest in stocks and bonds? 40000
 
-## Sample Output 
+## Sample Output/Response
 You can retire in
 ['Paris/France', 'Hamilton/Canada', 'Milan/Italy', 'Bucaramanga/Colombia', 'Madrid/Spain', 'Delhi/India']
 
 
 # Executive Summary
 
-The Retirement Global+ app seeks to flip the script for working citizens around the world. This tool enables users to assess their current assets, as well as their future needs in order to establish an optimized retirement plan to live in any city around the world. The Retirement Global+ app tells you exactly where you can comfortably retire at your preferred retirement age.
+Retirement Global 2.0 is our new and improved application designed to help working class citizens live out their dream retirement sooner. In addition to our original promise, we seek to provide our clients with new products to help them build wealth. The new Housing Analytics tool leverages the cutting edge of machine learning and predictive technology to guide our clients on where to purchase investment properties or their retirement homes.
 
 
 # For Users -- General Overview & Flow
@@ -66,21 +64,24 @@ Hamilton (Canada)
 
 # Documents
 
-###Team Charter
-<br>
-https://docs.google.com/document/d/1laAHUYkqxnocPBQqIeRB0HaU6wA8JShfNR4nlD4YaIU/edit?usp=sharing
-
 ###Team Presentation (Slides)
 <br>
 https://docs.google.com/presentation/d/1telx0y47zEFE7gah3XCnOr20Z_wnIJqP7ymZ5ulgjtM/edit?usp=sharing
+
+
+###Team Charter
+<br>
+https://docs.google.com/document/d/1laAHUYkqxnocPBQqIeRB0HaU6wA8JShfNR4nlD4YaIU/edit?usp=sharing
 
 ---
 
 ## Technologies
 
 Required programs, libraries, systems, and overall dependencies:
-
+<br>
 Python (version 3.0 or later)
+<br>
+`Amazon Lex == V2`
 <br>
 `Pathlib`
 <br>
@@ -98,7 +99,24 @@ Python (version 3.0 or later)
 <br>
 `fileio`
 <br>
-`questionary`
+`fire==0.4.0`
+<br>
+pip==22.0.4
+<br>
+prompt-toolkit==3.0.28
+<br>
+questionary==1.10.0
+<br>
+setuptools==58.1.0
+<br>
+six==1.16.0
+<br>
+termcolor==1.1.0
+<br>
+wcwidth==0.2.5
+<br>
+wheel==0.37.1
+<br>
 ---
 
 ## Installation Guide
@@ -113,7 +131,7 @@ Python (version 3.0 or later)
 
 ---
 
-## Usage of Retirement Global+ App
+## Usage of Retirement Global 2.0 App
 
 Getting User info:
 
@@ -142,9 +160,11 @@ output
 output.calc_cumulative_return()
 ```
 
-## View of Questionary Stage
-![view_questionary](https://user-images.githubusercontent.com/11021924/168452484-30cb0b8b-74b0-4a17-b8da-7570feaa83e8.png)
+## View of Amazon Lex Screen
+![view_Lex_screen](https://user-images.githubusercontent.com/11021924/168452484-30cb0b8b-74b0-4a17-b8da-7570feaa83e8.png)
 
+## Short Clip of Amazon Lex Chatbot
+![view_Lex_screen](https://user-images.githubusercontent.com/11021924/168452484-30cb0b8b-74b0-4a17-b8da-7570feaa83e8.png)
 
 ## Forecast Simulation
 ![sample_output_MC](https://user-images.githubusercontent.com/11021924/168452488-f5470627-b15b-4166-8dd5-ace160e4e9c0.png)
