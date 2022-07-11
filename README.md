@@ -1,5 +1,9 @@
 # Retirement Global 2.0
 
+# Executive Summary
+
+Retirement Global 2.0 is our new and improved application designed to help working class citizens live out their dream retirement sooner. In addition to our original promise, we seek to provide our clients with new products to help them build wealth. The new Housing Analytics tool leverages the cutting edge of machine learning and predictive technology to guide our clients on where to purchase investment properties or their retirement homes.
+
 ## How To Run
 1. Open `RoboAdviser-LexJson.zip file` to start Amazon Lex chatbot
 2. Enter the utterance: "I want to retire"
@@ -25,11 +29,6 @@
 ## Sample Output/Response
 You can retire in
 ['Paris/France', 'Hamilton/Canada', 'Milan/Italy', 'Bucaramanga/Colombia', 'Madrid/Spain', 'Delhi/India']
-
-
-# Executive Summary
-
-Retirement Global 2.0 is our new and improved application designed to help working class citizens live out their dream retirement sooner. In addition to our original promise, we seek to provide our clients with new products to help them build wealth. The new Housing Analytics tool leverages the cutting edge of machine learning and predictive technology to guide our clients on where to purchase investment properties or their retirement homes.
 
 
 # For Users -- General Overview & Flow
@@ -161,10 +160,10 @@ output.calc_cumulative_return()
 ```
 
 ## View of Amazon Lex Screen
-![view_Lex_screen](https://user-images.githubusercontent.com/11021924/168452484-30cb0b8b-74b0-4a17-b8da-7570feaa83e8.png)
+![view_Lex_screen](https://github.com/gatsbyz/blue-sky-retirement-plus/blob/Reggie/Amazon_Lex_screen.png)
 
 ## Short Clip of Amazon Lex Chatbot
-![view_Lex_screen](https://user-images.githubusercontent.com/11021924/168452484-30cb0b8b-74b0-4a17-b8da-7570feaa83e8.png)
+![view_Lex_screen](https://github.com/gatsbyz/blue-sky-retirement-plus/blob/Reggie/Lex_clip.mp4)
 
 ## Forecast Simulation
 ![sample_output_MC](https://user-images.githubusercontent.com/11021924/168452488-f5470627-b15b-4166-8dd5-ace160e4e9c0.png)
